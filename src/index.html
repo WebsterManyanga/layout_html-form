@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <fieldset class="formField">
       <legend>Personal information</legend>
       <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
@@ -21,6 +20,8 @@
             type="text"
             name="surname"
             id="surname"
+            required
+            autocomplete="off"
           >
         </div>
         <div class="formInput">
@@ -29,6 +30,9 @@
             type="text"
             name="name"
             id="name"
+            minlength="2"
+            required
+            autocomplete="off"
           >
         </div>
         <div class="formInput">
@@ -37,6 +41,9 @@
             type="number"
             name="age"
             id="age"
+            value="12"
+            min="1"
+            max="100"
           >
         </div>
         <div class="formInput">
@@ -45,6 +52,7 @@
             type="date"
             name="dateOfBirth"
             id="dateOfBirth"
+            required
           >
         </div>
         <div class="formInput">
@@ -53,6 +61,7 @@
             type="checkbox"
             name="agreement"
             id="agreement"
+            required
           >
         </div>
 
@@ -67,6 +76,9 @@
           type="email"
           name="email"
           id="email"
+          multiple
+          placeholder="email@example.com"
+          autocomplete="off"
         >
       </div>
       <div class="formInput">
@@ -75,6 +87,7 @@
           type="password"
           name="password"
           id="password"
+          autocomplete="off"
         >
       </div>
     </fieldset>
@@ -126,6 +139,8 @@
           name="rating"
           id="rating"
           value="0"
+          max="5"
+          min="1"
         >
       </div>
     </fieldset>
@@ -138,6 +153,8 @@
           id="comments"
           cols="25"
           rows="3"
+          maxlength="50"
+          autocomplete="off"
         ></textarea>
       </div>
       <div class="formInput">
