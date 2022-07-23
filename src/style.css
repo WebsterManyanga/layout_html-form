@@ -5,4 +5,9 @@
 
 .formField {
   margin-bottom: 20px;
+
+}
+
+.formInput:last-child {
+  margin-bottom: 0;
 }

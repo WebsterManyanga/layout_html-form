@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <fieldset class="formField">
-      <legend>Personal information</legend>
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="formField">
+        <legend>Personal information</legend>
         <div class="formInput">
           <label for="surname">Surname:</label>
           <input
@@ -36,7 +36,7 @@
           >
         </div>
         <div class="formInput">
-          <label for="age">How old are You:</label>
+          <label for="age">How old are You?</label>
           <input
             type="number"
             name="age"
@@ -56,7 +56,7 @@
           >
         </div>
         <div class="formInput">
-          <label for="agreement">I accept the term of agreement</label>
+          <label for="agreement">I accept the term of the agreement</label>
           <input
             type="checkbox"
             name="agreement"
@@ -65,8 +65,7 @@
           >
         </div>
 
-      </form>
-    </fieldset>
+      </fieldset>
     </form>
     <fieldset class="formField">
       <legend>Registration</legend>
@@ -82,7 +81,7 @@
         >
       </div>
       <div class="formInput">
-        <label for="password">Password</label>
+        <label for="password">Password:</label>
         <input
           type="password"
           name="password"
@@ -92,7 +91,7 @@
       </div>
     </fieldset>
     <fieldset class="formField">
-      <legend>An interesting fact about you</legend>
+      <legend>An interesting fact about you!</legend>
       <div class="formInput">
         <label>Do you love cats?</label>
         <input
@@ -122,11 +121,16 @@
           type="time"
           name="bedTime"
           id="bedTime"
+          step="1"
         >
       </div>
       <div class="formInput">
-        <label for="favCars">What are your favorite brand of cars</label>
-        <select name="favCars" id="favCars">
+        <label for="favCars">What are your favorite brand of cars?</label>
+        <select
+          name="favCars"
+          id="favCars"
+          multiple
+        >
           <option value="BMW">BMW</option>
           <option value="Audi">Audi</option>
           <option value="Lada">Lada</option>
@@ -151,8 +155,6 @@
         <textarea
           name="comments"
           id="comments"
-          cols="25"
-          rows="3"
           maxlength="50"
           autocomplete="off"
         ></textarea>
@@ -166,6 +168,7 @@
       </div>
     </fieldset>
     <input type="submit" value="Submit">
+  </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
