@@ -12,7 +12,7 @@
   </head>
   <body>
     <h1>HTML Form</h1>
-    <fieldset>
+    <fieldset class="formField">
       <legend>Personal information</legend>
       <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
         <div class="formInput">
@@ -59,6 +59,25 @@
       </form>
     </fieldset>
     </form>
+    <fieldset class="formfield">
+      <legend>Registration</legend>
+      <div class="formInput">
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+        >
+      </div>
+      <div class="formInput">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+        >
+      </div>
+    </fieldset>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
