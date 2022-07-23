@@ -1,1 +1,8 @@
 /* styles go here */
+.formInput {
+  margin-bottom: 10px;
+}
+
+.formField {
+  margin-bottom: 20px;
+}
