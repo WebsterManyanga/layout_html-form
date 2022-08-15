@@ -66,109 +66,108 @@
         </div>
 
       </fieldset>
+      <fieldset class="formField">
+        <legend>Registration</legend>
+        <div class="formInput">
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            multiple
+            placeholder="email@example.com"
+            autocomplete="off"
+          >
+        </div>
+        <div class="formInput">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="off"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="formField">
+        <legend>An interesting fact about you!</legend>
+        <div class="formInput">
+          <label>Do you love cats?</label>
+          <input
+            type="radio"
+            name="loveCats"
+            id="yes"
+          >
+          <label for="yes">Yes</label>
+          <input
+            type="radio"
+            name="loveCats"
+            id="no"
+          >
+          <label for="no">No</label>
+        </div>
+        <div class="formInput">
+          <label for="favColor">What is your favorite color?</label>
+          <input
+            type="color"
+            name="favColor"
+            id="favColor"
+          >
+        </div>
+        <div class="formInput">
+          <label for="bedTime">What time do you go to bed?</label>
+          <input
+            type="time"
+            name="bedTime"
+            id="bedTime"
+            step="1"
+          >
+        </div>
+        <div class="formInput">
+          <label for="favCars">What are your favorite brand of cars?</label>
+          <select
+            name="favCars"
+            id="favCars"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div class="formInput">
+          <label for="rating">How do you rate our work?</label>
+          <input
+            type="range"
+            name="rating"
+            id="rating"
+            value="0"
+            max="5"
+            min="1"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="formField">
+        <legend>Additional info:</legend>
+        <div class="formInput">
+          <label for="comments">Comments:</label>
+          <textarea
+            name="comments"
+            id="comments"
+            maxlength="50"
+            autocomplete="off"
+          ></textarea>
+        </div>
+        <div class="formInput">
+          <label for="recommend">Would you recommend us?</label>
+          <select name="recommend" id="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <input type="submit" value="Submit">
     </form>
-    <fieldset class="formField">
-      <legend>Registration</legend>
-      <div class="formInput">
-        <label for="email">E-mail:</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          multiple
-          placeholder="email@example.com"
-          autocomplete="off"
-        >
-      </div>
-      <div class="formInput">
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          autocomplete="off"
-        >
-      </div>
-    </fieldset>
-    <fieldset class="formField">
-      <legend>An interesting fact about you!</legend>
-      <div class="formInput">
-        <label>Do you love cats?</label>
-        <input
-          type="radio"
-          name="loveCats"
-          id="yes"
-        >
-        <label for="yes">Yes</label>
-        <input
-          type="radio"
-          name="loveCats"
-          id="no"
-        >
-        <label for="no">No</label>
-      </div>
-      <div class="formInput">
-        <label for="favColor">What is your favorite color?</label>
-        <input
-          type="color"
-          name="favColor"
-          id="favColor"
-        >
-      </div>
-      <div class="formInput">
-        <label for="bedTime">What time do you go to bed?</label>
-        <input
-          type="time"
-          name="bedTime"
-          id="bedTime"
-          step="1"
-        >
-      </div>
-      <div class="formInput">
-        <label for="favCars">What are your favorite brand of cars?</label>
-        <select
-          name="favCars"
-          id="favCars"
-          multiple
-        >
-          <option value="BMW">BMW</option>
-          <option value="Audi">Audi</option>
-          <option value="Lada">Lada</option>
-        </select>
-      </div>
-      <div class="formInput">
-        <label for="rating">How do you rate our work?</label>
-        <input
-          type="range"
-          name="rating"
-          id="rating"
-          value="0"
-          max="5"
-          min="1"
-        >
-      </div>
-    </fieldset>
-    <fieldset class="formField">
-      <legend>Additional info:</legend>
-      <div class="formInput">
-        <label for="comments">Comments:</label>
-        <textarea
-          name="comments"
-          id="comments"
-          maxlength="50"
-          autocomplete="off"
-        ></textarea>
-      </div>
-      <div class="formInput">
-        <label for="recommend">Would you recommend us?</label>
-        <select name="recommend" id="recommend">
-          <option value="yes">yes</option>
-          <option value="no">no</option>
-        </select>
-      </div>
-    </fieldset>
-    <input type="submit" value="Submit">
-  </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
